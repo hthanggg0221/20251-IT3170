@@ -27,4 +27,6 @@ int main() {
     else
         for (; i >= 0; i--)
             printf("%d", SUM[i]);
+
+    return 0;
 }

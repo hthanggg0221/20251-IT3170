@@ -1,19 +1,18 @@
 #include <bits/stdc++.h>
 
-#define maxN 1000001
-
 using namespace std;
 
-int a[maxN];
-
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     int n, Q;
     int res = 0;
     cin >> n >> Q;
-    for (int k = 1; k <= n; k++) {
+    vector<int> a(n);
+    for (int k = 0; k < n; k++) {
         cin >> a[k];
     }
-    int i = 1, j = n;
+    int i = 0, j = n - 1;
     while (i < j) {
         if (a[i] + a[j] == Q) {
             res++;
